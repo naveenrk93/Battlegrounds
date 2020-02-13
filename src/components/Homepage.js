@@ -21,13 +21,13 @@ class HomePage extends React.Component{
             <div className="container">
                 <nav className="navbar navbar-dark bg-dark">
                     <ul className="nav nav-tabs nav-justified">
-                        <li className="active"><a data-toggle="tab" href="#home">Heroes</a></li>
-                        <li><a data-toggle="tab" href="#tier1">Tier 1</a></li>
-                        <li><a data-toggle="tab" href="#tier2">Tier 2</a></li>
-                        <li><a data-toggle="tab" href="#tier3">Tier 3</a></li>
-                        <li><a data-toggle="tab" href="#tier4">Tier 4</a></li>
-                        <li><a data-toggle="tab" href="#tier5">Tier 5</a></li>
-                        <li><a data-toggle="tab" href="#tier6">Tier 6</a></li>
+                        <li className="active"><a data-toggle="tab" href="#home" onClick={this.onTabClick('Heroes')}>Heroes</a></li>
+                        <li><a data-toggle="tab" href="#tier1" onClick={this.onTabClick('Tier 1')}>Tier 1</a></li>
+                        <li><a data-toggle="tab" href="#tier2" onClick={this.onTabClick('Tier 2')}>Tier 2</a></li>
+                        <li><a data-toggle="tab" href="#tier3" onClick={this.onTabClick('Tier 3')}>Tier 3</a></li>
+                        <li><a data-toggle="tab" href="#tier4" onClick={this.onTabClick('Tier 4')}>Tier 4</a></li>
+                        <li><a data-toggle="tab" href="#tier5" onClick={this.onTabClick('Tier 5')}>Tier 5</a></li>
+                        <li><a data-toggle="tab" href="#tier6" onClick={this.onTabClick('Tier 6')}>Tier 6</a></li>
                     </ul>
                 </nav>
                 <div className="tab-content">
